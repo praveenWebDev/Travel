@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="images/Logo.png" />
+  <title>Travel with us</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand text-uppercase" href="#">Tours</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#Packages">Packages</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#FAQ">FAQ</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <div class="modal fade" tabindex="-1" id="booking">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Book a tour</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="#">
+              <div class="row g-2">
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <input id="email" type="email" class="form-control" placeholder="Your email" />
+                    <label for="email">Email address</label>
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="form-floating">
+                    <select id="select1" class="form-select">
+                      <option>Taj Mahal - $299</option>
+                      <option>Kedarnath Shiva Temple - $399</option>
+                      <option>Mysore Palace - $199</option>
+                      <label for="select1">Pick a tour</label>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Checkout</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="carouselExample" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active c-item">
+          <img src="images/Pic_1.jpg" class="d-block w-100 c-img" alt="Landscape" />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
+            <h1 class="display-1 fw-bolder text-capitalize">
+              The India Tours
+            </h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking">
+              Book a tour
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/Pic_2.jpg" class="d-block w-100 c-img" alt="Landscape" />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
+            <h1 class="display-1 fw-bolder text-capitalize">
+              The India Tours
+            </h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking">
+              Book a tour
+            </button>
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="images/Pic_3.jpg" class="d-block w-100 c-img" alt="Landscape" />
+          <div class="carousel-caption top-0 mt-4">
+            <p class="fs-3 mt-5 text-uppercase">Discover the hidden world</p>
+            <h1 class="display-1 fw-bolder text-capitalize">
+              The India Tours
+            </h1>
+            <button class="btn btn-primary px-4 py-2 fs-5 mt-5" data-bs-toggle="modal" data-bs-target="#booking">
+              Book a tour
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <section class="overview">
+      <div class="container h-100 d-flex align-items-center">
+        <div class="row w-100 text-center fs-4">
+          <div class="col-xl">
+            <i class="bi bi-airplane-fill me-2"></i>
+            3 amazing destinations
+          </div>
+          <div class="col-xl">
+            <i class="bi bi-wallet-fill me-2"></i>
+            only pay 5% up front
+          </div>
+          <div class="col-xl">
+            <i class="bi bi-patch-check-fill me-2"></i> 
+            1000's of customers
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="Packages" class="pt-md-5">
+      <h2 class="text-center my-5">Packages</h2>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="images/TajMahal.jpg" class="card-img-top" alt="Taj Mahal">
+              <div class="card-body">
+                <h5 class="card-title">Taj Mahal Tour</h5>
+                <p class="card-text">Experience the splendor of the Taj Mahal, a UNESCO World Heritage Site and one of the New Seven Wonders of the World.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Book tour</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="images/Kedarnath.jpg" class="card-img-top" alt="Kedarnath Shiva Temple">
+              <div class="card-body">
+                <h5 class="card-title">Kedarnath Shiva Temple Tour</h5>
+                <p class="card-text">Embark on a spiritual journey to Kedarnath, one of the holiest Hindu temples dedicated to Lord Shiva.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Book tour</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card h-100">
+              <img src="images/Mysore.jpg" class="card-img-top" alt="Mysore Palace">
+              <div class="card-body">
+                <h5 class="card-title">Mysore Palace Tour</h5>
+                <p class="card-text">Discover the beauty and history of Mysore Palace, one of India’s most magnificent royal palaces.</p>
+                <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#booking">Book tour</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="FAQ" class="py-5">
+      <h2 class="text-center my-5">FAQ</h2>
+    
+      <div class="container">
+      <div class="accordion w-75 mx-auto" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is the cancellation policy?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Our cancellation policy is flexible.</strong> You can cancel up to 24 hours before the tour for a full refund. For cancellations within 24 hours, please refer to our terms and conditions.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              How do I book a tour?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Booking a tour is easy!</strong> Just click the "Book Now" button on the tour page, select your dates, and complete the checkout process. You’ll receive a confirmation email with further details.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Are there any group discounts?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <strong>Yes, we offer group discounts.</strong> For groups of 5 or more, please contact our support team to discuss discounted rates and special arrangements.
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark py-4 mt-5">
+    <div class="container text-light text-center">
+      <h2 class="display-4 mb-3">Tours</h2>
+
+      <div class="social-links mb-3">
+        <a href="#" class="text-light me-3"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-light me-3"><i class="bi bi-instagram"></i></a>
+      </div>
+
+      <address>
+        <small class="text-white-50 d-block mb-2">
+          &copy; <span id="currentYear"></span> Copyright by Praveen. All rights reserved.
+        </small>
+        <small class="text-white-50">
+          <a href="mailto:praveen@example.com" class="text-light">Contact Us</a>
+        </small>
+      </address>
+    </div>
+  </footer>
+
+  <script>
+    // Dynamically update the year
+    document.getElementById("currentYear").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+
+</html>
